@@ -1,0 +1,86 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "corona update",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "NumberConfirmedIntent",
+          "slots": [
+            {
+              "name": "country",
+              "type": "AMAZON.Country"
+            },
+            {
+              "name": "cases",
+              "type": "cases"
+            }
+          ],
+          "samples": [
+            "number of {cases} {country}",
+            "number of {cases} in {country}"
+          ]
+        },
+        {
+          "name": "AboutIntent",
+          "slots": [],
+          "samples": [
+            "developer",
+            "develop",
+            "about corona update",
+            "about"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "deaths",
+                "synonyms": [
+                  "death"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "recovered",
+                "synonyms": [
+                  "recovering",
+                  "recover"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "confirmed",
+                "synonyms": [
+                  "confirming",
+                  "confirm"
+                ]
+              }
+            }
+          ],
+          "name": "cases"
+        }
+      ]
+    }
+  },
+  "version": "16"
+}

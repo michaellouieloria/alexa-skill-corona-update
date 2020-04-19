@@ -1,0 +1,53 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Corona Update gives numeric figures of confirmed, recovered and death cases per country and worldwide",
+          "examplePhrases": [
+            "Alexa open corona update",
+            "number of confirmed in USA",
+            "number of recovered worldwide"
+          ],
+          "keywords": [
+            "corona",
+            "cases",
+            "confirmed",
+            "recovered",
+            "deaths"
+          ],
+          "name": "Corona Update",
+          "description": "Corona Update gives numeric figures of confirmed, recovered and death cases per country and worldwide.\n\nThe numbers are retrieved from Worldmeter and updated after the close of the day in GMT+0.\n\n--- Example Commands ---\n\"Alexa, start corona update\"\n\"number of confirmed worldwide\"\n\"number of confirmed in USA\"\n\"number of recovered in Canada\"\n\"number of deaths in USA\"\n\"about\"\n\"help\"",
+          "smallIconUri": "file://assets/images/en-US_smallIconUri.png",
+          "largeIconUri": "file://assets/images/en-US_largeIconUri.png"
+        }
+      },
+      "automaticDistribution": {
+        "isActive": false
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Sample Testing Instructions.",
+      "category": "NEWS",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:371527589336:function:a1fd69c3-2862-47cb-aa2a-cd9360d97714:Release_0"
+        },
+        "interfaces": []
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "en-US": {}
+      },
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
+  }
+}
